@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { Mail, Github, MapPin, Linkedin, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -47,7 +47,7 @@ export default function HeroSection() {
               className="text-xl text-muted-foreground mb-6"
               variants={childVariants}
             >
-              Software Engineer 👨‍💻
+              {personalInfo.title}
             </motion.p>
 
             <motion.div
@@ -61,6 +61,14 @@ export default function HeroSection() {
               >
                 <MapPin className="h-4 w-4 mr-2" />
                 {personalInfo.location}
+              </motion.div>
+
+              <motion.div
+                className="flex items-center text-sm text-muted-foreground max-w-md text-center md:text-left"
+                variants={childVariants}
+              >
+                <Globe className="h-4 w-4 mr-2 shrink-0" />
+                {personalInfo.availability}
               </motion.div>
 
               <motion.a
@@ -121,7 +129,7 @@ export default function HeroSection() {
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-              I am a software developer with 4 years of experience working with Laravel, Vue, and Node.js. Throughout my career, I have not only contributed as a developer but also led development teams, conducted code reviews, ensured quality through automated testing, and managed deployment processes. Additionally, I created a JavaScript library for dynamic grids, enabling resizable columns. Currently, I am in my final year of a Bachelor's degree in Information Systems.
+              {personalInfo.summary}
             </p>
           </div>
         </MotionWrapper>

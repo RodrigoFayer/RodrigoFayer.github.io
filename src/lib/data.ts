@@ -1,101 +1,127 @@
 export const personalInfo = {
   name: "Rodrigo Fayer",
-  location: "Juiz de Fora, Brazil",
+  title: "Senior Software Engineer & Team Lead",
+  location: "Juiz de Fora, Brazil (UTC-3)",
+  availability:
+    "Open to remote roles · 4+ hours daily overlap with US East Coast, full morning overlap with Europe",
   email: "rodrigofayer26@gmail.com",
+  phone: "+55 32 98711-0939",
   github: "https://github.com/rodrigofayer",
   linkedin: "https://www.linkedin.com/in/rodrigo-fayer/",
+  summary:
+    "Senior Software Engineer and Team Lead with 5+ years of experience building and scaling web applications for a B2B SaaS marketing analytics platform used by 10,000+ companies. Full-stack across Laravel, Vue.js, React.js and Node.js, with end-to-end ownership of business-critical systems, including the billing infrastructure behind R$1M+ in monthly recurring revenue. Currently lead a team of 4 engineers — defining cycle priorities, tracking delivery KPIs and shipping the changes that move them — while staying hands-on with high-impact technical work.",
 };
 
 export const workExperience = [
   {
     company: "Reportei",
     location: "Remote",
-    position: "Mid-level Software Developer | Team Lead",
+    position: "Team Lead — Core Team",
     period: "Jan 2025 - Present",
     achievements: [
-      "Currently leading the Core team in a company with 10,000+ clients.",
-      "Responsible for defining the team’s OKRs and roadmap.",
-      "Guide and support three developers while also contributing to strategic technical projects hands-on."
+      "Promoted from Mid-Level to Senior Software Engineer in March 2026.",
+      "Lead the Core team of 4 engineers end-to-end — cycle planning, scope definition, code review — and own the delivery KPIs reported to leadership.",
+      "Own the company's churn-reduction and onboarding-activation initiatives: doubled the onboarding activation rate from 15% to 30% in six months, from metric analysis through to shipped product changes.",
+      "Contributed to the design and launch of a new product line that reached R$100K+ in monthly recurring revenue within its first year.",
+      "Drive technical decision-making and architecture reviews across the team's projects, and mentor engineers through code review and regular feedback.",
     ],
   },
   {
     company: "Reportei",
     location: "Remote",
-    position: "Mid-level Software Developer",
-    period: "Jun 2022 - Jan 2025",
+    position: "Mid-Level Software Engineer",
+    period: "Jul 2022 - Jan 2025",
     achievements: [
-      "Mentored and managed three interns, two of whom were promoted and continue to perform at a high level within the company.",
-      "A dynamic pricing table with Stripe integration.",
-      "CLI command to migrate plans due to inflation adjustments.",
-      "Created a JavaScript grid component with drag and drop and resizable items, enhancing the visual editor’s flexibility."
+      "Owned and evolved the company's billing system — today handling R$1M+ in monthly recurring revenue — under high reliability requirements.",
+      "Owned support escalations, resolving 50+ tickets per month and unblocking the development team for faster issue resolution.",
+      "Drafted task scopes, mentored two interns to independent contribution, and ran regular feedback sessions.",
     ],
   },
   {
     company: "Reportei",
     location: "Remote",
-    position: "Junior Software Developer",
-    period: "Dec 2021 - Jun 2022",
+    position: "Junior Software Engineer",
+    period: "Dec 2021 - Jul 2022",
     achievements: [
-      "Led all required updates to support the new Stripe-based subscription model (plan to axis migration).",
-      "Took on responsibilities such as code reviews and deploys.",
-      "Supported other teams and projects during a period when the development team had only three members, being the most experienced dev on the team at the time."
+      "Built and maintained features with Laravel, Vue.js and Node.js; ran code reviews, releases and deployments.",
+      "Took on informal task prioritization, helping teammates unblock technical challenges.",
     ],
   },
   {
     company: "Reportei",
     location: "Remote",
-    position: "Software Developer Intern",
+    position: "Software Development Intern",
     period: "Apr 2021 - Dec 2021",
     achievements: [
-      "Contributed to the launch of Reportei V4, participating in one of the company’s most important product milestones.",
-      "Built a full integration with RD Station’s new API from scratch during a company hackathon."
+      "Delivered an RD Station platform integration and contributed to a revamp of the reporting architecture with customizable metrics, using Laravel, Vue.js and Node.js.",
     ],
   },
 ];
 
 export const education = [
   {
-    institution: "Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais",
+    institution:
+      "Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais",
     location: "Juiz de Fora, Brazil",
-    degree: "Bachelor of Information systems",
-    period: "Jan 2021 - Present",
-    achievements: [
-    ],
+    degree: "BSc in Information Systems",
+    period: "2021 - Aug 2026",
+    achievements: [],
   },
   {
     institution: "EC Brighton English Language School",
     location: "Brighton, England",
-    degree: "General English 30 lessons / 22.5 hours",
-    period: "Jul 2023 - Aug 2023",
-    achievements: [
-    ],
+    degree: "General English (Immersion Program)",
+    period: "2023",
+    achievements: [],
   },
 ];
+
 export const skills = {
-  programmingLanguages: [
-    "JavaScript",
-    "PhP",
-    "Java",
-    "Go",
+  programmingLanguages: ["PHP", "JavaScript", "TypeScript", "Java"],
+  frontendDevelopment: ["Vue.js", "React.js", "Tailwind CSS", "HTML", "CSS"],
+  backendDevelopment: ["Laravel", "Node.js", "Express.js", "Spring Boot", "REST APIs"],
+  databaseAndStorage: ["MySQL", "MongoDB", "Redis"],
+  cloudAndDevOps: [
+    "Docker",
+    "DigitalOcean",
+    "GitHub Actions",
+    "Jenkins",
+    "CI/CD",
+    "Git",
   ],
-  frontendDevelopment: [
-    "VueJs",
-    "ReactJs",
-    "Tailwind CSS",
-    "HTML",
-    "CSS",
+  toolsAndServices: ["Sentry", "Posthog", "New Relic", "Stripe"],
+  practices: [
+    "System Design",
+    "Automated Testing",
+    "Code Review",
+    "Technical Mentoring",
+    "Agile/Scrum",
   ],
-  backendDevelopment: ["Laravel", "Nodejs", "Expressjs", "Go"],
-  databaseAndStorage: ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
-  cloudAndDevOps: ["AWS", "Jenkins", "Docker", "GitHub Actions", "Digital Ocean"],
-  toolsAndServices: [  
-    "Sentry",
-    "Posthog",
-    "New Relic",
+  spokenLanguages: [
+    "English (Professional working proficiency)",
+    "Portuguese (Native)",
   ],
 };
 
 export const projects = [
+  {
+    title: "Billing Architecture & Subscription System",
+    description: [
+      "Own the billing infrastructure behind R$1M+ in monthly recurring revenue, under high reliability requirements.",
+      "Designed and evolved the Axis billing architecture at Reportei, from initial launch to full ownership.",
+      "Created CLI tools to generate dynamic pricing tables and to handle Stripe plan migrations due to inflation adjustments.",
+      "Acted as the lead developer during two Black Friday events, ensuring billing stability and scalability under peak demand.",
+    ],
+  },
+  {
+    title: "Onboarding Activation & Churn Reduction",
+    description: [
+      "Own the company's churn-reduction and onboarding-activation initiatives end-to-end.",
+      "Doubled the onboarding activation rate from 15% to 30% in six months.",
+      "Ran the full loop: metric analysis, hypothesis definition, and shipped product changes.",
+      "Defined the indicators used by leadership to track product and team performance.",
+    ],
+  },
   {
     title: "Grid JavaScript Library",
     description: [
@@ -106,28 +132,20 @@ export const projects = [
     ],
   },
   {
-    title: "Billing Architecture & Axis System",
-    description: [
-      "Played a key role in designing and improving the Axis architecture at Reportei during its initial launch, and later became fully responsible for maintaining and evolving it.",
-      "Created CLI tools to generate dynamic pricing tables and to handle plan migrations on Stripe due to inflation adjustments.",
-      "Acted as the lead developer during two Black Friday events, ensuring billing system stability and scalability under high demand.",
-    ],
-  },
-  {
-    title: "Social Media Analytics API Integrations",
-    description: [
-      "Developed the entire RD Station integration during a company hackathon, building directly on early API documentation and providing key feedback to improve the API’s alignment with Reportei’s needs.",
-      "Migrated the Hotmart integration from a webhook-based system to a more stable API-driven solution.",
-      "Took the lead on implementing core parts of the Meta Ads and Google Ads integrations",
-      "Helped maintain and evolve 30+ marketing data integrations that support thousands of client reports inside Reportei."
-    ],
-  },
-  {
     title: "Report Editing Architecture",
     description: [
-      "Designed and implemented the core architecture for Reportei’s report editing system, building the foundation used by over 1 million reports to date.",
-      "Defined much of the Vue.js component lifecycle management, leveraging its reactivity system to ensure performance and consistency across dynamic editing experiences.",
-      "The architecture, created in late 2021, remains the core of the report editor in production today",
+      "Designed and implemented the core architecture for Reportei's report editing system, the foundation used by over 1 million reports to date.",
+      "Defined much of the Vue.js component lifecycle management, leveraging its reactivity system for performance and consistency across dynamic editing experiences.",
+      "The architecture, created in late 2021, remains the core of the report editor in production today.",
+    ],
+  },
+  {
+    title: "Marketing Data API Integrations",
+    description: [
+      "Built the entire RD Station integration during a company hackathon, working from early API documentation and providing feedback that shaped the API.",
+      "Migrated the Hotmart integration from a webhook-based system to a more stable API-driven solution.",
+      "Led the implementation of core parts of the Meta Ads and Google Ads integrations.",
+      "Helped maintain and evolve 30+ marketing data integrations supporting thousands of client reports.",
     ],
   },
 ];
